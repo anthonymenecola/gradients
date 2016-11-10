@@ -1,0 +1,177 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+	font-size: 18px;
+	font-family: 'Karla', Helvetica, sans-serif;
+	line-height: 1.5;
+	background-color: #232323;
+	color: white;
+}
+
+main {
+	width: 100%;
+	max-width: 960px;
+	padding: 3em;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: 'Merriweather', Georgia, serif;
+	font-size: 4em;
+	font-weight: 100;
+	text-align: center;
+	margin: 1em 0;
+}
+
+p {
+	text-align: center;
+	padding: 3em 0 1.5em 0;
+}
+
+.backgroundcliptext {
+    -webkit-background-clip: text;
+    background-image: -webkit-linear-gradient(left, #1de9b6, #2979ff);
+    background-image: linear-gradient(to right, #1de9b6, #2979ff);
+    -webkit-text-fill-color: transparent;
+}
+
+.container {
+	width: 100%;
+	height: 200px;
+	border-radius: 4px;
+}
+
+/* Top to bottom */
+#grad {
+    background: #1de9b6; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#1de9b6, #2979ff); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#1de9b6, #2979ff); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#1de9b6, #2979ff); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#1de9b6, #2979ff); /* Standard syntax */
+}
+
+/* Left to right */
+#grad-2 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #1de9b6 , #2979ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #1de9b6, #2979ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1de9b6, #2979ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #1de9b6 , #2979ff); /* Standard syntax */
+}
+
+/* Diagonal */
+#grad-3 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #1de9b6, #2979ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #1de9b6, #2979ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #1de9b6, #2979ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #1de9b6, #2979ff); /* Standard syntax */
+}
+
+/* Custom anglez - background: linear-gradient(angle, color-stop1, color-stop2); */
+#grad-4 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(-160deg, #1de9b6, #2979ff); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(-160deg, #1de9b6, #2979ff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(-160deg, #1de9b6, #2979ff); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(-160deg, #1de9b6, #2979ff); /* Standard syntax */
+}
+
+/* Multi-colored */
+#grad-5 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #1de9b6, #2979ff, #B466C8); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(left, #1de9b6, #2979ff, #B466C8); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #1de9b6, #2979ff, #B466C8); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(right, #1de9b6, #2979ff, #B466C8); /* Standard syntax */
+}
+
+/* Using transparency */
+#grad-6 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(29,233,182,0),rgba(29,233,182,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(29,233,182,0),rgba(29,233,182,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(29,233,182,0),rgba(29,233,182,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(29,233,182,0),rgba(29,233,182,1)); /*Standard*/
+}
+
+/* Radial - Evenly Spaced */
+#grad-7 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#1de9b6, #2979ff, #B466C8); /* Safari 5.1 to 6.0 */
+  background: -o-radial-gradient(#1de9b6, #2979ff, #B466C8); /* For Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(#1de9b6, #2979ff, #B466C8); /* For Firefox 3.6 to 15 */
+  background: radial-gradient(#1de9b6, #2979ff, #B466C8); /* Standard syntax */
+}
+
+/* Radial - Specific Spacing */
+#grad-8 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(#1de9b6 5%, #2979ff 15%, #B466C8 60%); /* Safari 5.1-6.0 */
+  background: -o-radial-gradient(#1de9b6 5%, #2979ff 15%, #B466C8 60%); /* For Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#1de9b6 5%, #2979ff 15%, #B466C8 60%); /* For Firefox 3.6-15 */
+  background: radial-gradient(#1de9b6 5%, #2979ff 15%, #B466C8 60%); /* Standard syntax */
+}
+
+/* Radial - Specific Shape (can take on circle or ellipse values) */
+#grad-9 {
+  background: #1de9b6; /* For browsers that do not support gradients */
+  background: -webkit-radial-gradient(circle, #1de9b6, #2979ff, #B466C8); /* Safari */
+  background: -o-radial-gradient(circle, #1de9b6, #2979ff, #B466C8); /* Opera 11.6 to 12.0 */
+  background: -moz-radial-gradient(circle, #1de9b6, #2979ff, #B466C8); /* Firefox 3.6 to 15 */
+  background: radial-gradient(circle, #1de9b6, #2979ff, #B466C8); /* Standard syntax */
+}
+
+
